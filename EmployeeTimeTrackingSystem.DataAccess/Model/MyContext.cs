@@ -3,11 +3,11 @@ using System.Data.Entity;
 
 namespace EmployeeTimeTrackingSystem.DataAccess
 {
-    public class EmployeeDbContext : DbContext
+    public class MyContext : DbContext
     {
-        public EmployeeDbContext(string connectionString) : base(connectionString)
+        public MyContext (string connectionString) : base(connectionString)
         {
-            Database.SetInitializer(new CreateDatabaseIfNotExists<EmployeeDbContext>());
+            Database.SetInitializer(new CreateDatabaseIfNotExists<MyContext>());
         }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)

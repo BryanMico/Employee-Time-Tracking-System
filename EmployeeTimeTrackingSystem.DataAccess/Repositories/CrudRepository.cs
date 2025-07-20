@@ -1,4 +1,4 @@
-﻿namespace InvenTree.DataAccess.Repositories
+﻿namespace EmployeeTimeTrackingSystem.DataAccess.Repositories
 {
     using System;
     using System.Collections.Generic;

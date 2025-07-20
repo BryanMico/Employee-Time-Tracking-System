@@ -52,7 +52,16 @@
   <ItemGroup>
     <Compile Include="Model\MyContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\AuditLogsRepository.cs" />
+    <Compile Include="Repositories\BranchesRepository.cs" />
     <Compile Include="Repositories\CrudRepository.cs" />
+    <Compile Include="Repositories\DepartmentsRepository.cs" />
+    <Compile Include="Repositories\EmployeesRepository.cs" />
+    <Compile Include="Repositories\SchedulesRepository.cs" />
+    <Compile Include="Repositories\TimeEntriesRepository.cs" />
+    <Compile Include="Repositories\UserBranchRepository.cs" />
+    <Compile Include="Repositories\UserRepository.cs" />
+    <Compile Include="Repositories\User_refPermissionRepository.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

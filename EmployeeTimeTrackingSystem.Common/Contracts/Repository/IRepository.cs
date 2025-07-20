@@ -1,4 +1,4 @@
-﻿namespace InvenTree.Common.Contracts.Repository
+﻿namespace EmployeeTimeTrackingSystem.Common.Contracts.Repository
 {
     using System;
     using System.Collections.Generic;

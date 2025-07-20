@@ -1,4 +1,4 @@
-﻿namespace InvenTree.Business
+﻿namespace EmployeeTimeTrackingSystem.Business
 {
     using System;
     using System.Collections.Generic;

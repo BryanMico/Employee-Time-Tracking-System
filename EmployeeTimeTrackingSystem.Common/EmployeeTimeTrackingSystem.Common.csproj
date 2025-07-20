@@ -50,8 +50,26 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Contracts\Repository\IAuditLogsRepository.cs" />
+    <Compile Include="Contracts\Repository\IBranchesRepository.cs" />
+    <Compile Include="Contracts\Repository\IDepartmentsRepository.cs" />
+    <Compile Include="Contracts\Repository\IEmployeesRepository.cs" />
     <Compile Include="Contracts\Repository\IRepository.cs" />
+    <Compile Include="Contracts\Repository\ISchedulesRepository.cs" />
+    <Compile Include="Contracts\Repository\ITimeEntriesRepository.cs" />
+    <Compile Include="Contracts\Repository\IUserBranchRepository.cs" />
+    <Compile Include="Contracts\Repository\IUserRepository.cs" />
+    <Compile Include="Contracts\Repository\IUser_refPermissionRepository.cs" />
+    <Compile Include="Contracts\Service\IAuditLogsService.cs" />
+    <Compile Include="Contracts\Service\IBranchesService.cs" />
+    <Compile Include="Contracts\Service\IDepartmentsService.cs" />
+    <Compile Include="Contracts\Service\IEmployeesService.cs" />
+    <Compile Include="Contracts\Service\ISchedulesService.cs" />
     <Compile Include="Contracts\Service\IService.cs" />
+    <Compile Include="Contracts\Service\ITimeEntriesService.cs" />
+    <Compile Include="Contracts\Service\IUserBranchService.cs" />
+    <Compile Include="Contracts\Service\IUserService.cs" />
+    <Compile Include="Contracts\Service\IUser_refPermissionService.cs" />
     <Compile Include="Model\AuditLogs.cs" />
     <Compile Include="Model\Branches.cs" />
     <Compile Include="Model\Departments.cs" />

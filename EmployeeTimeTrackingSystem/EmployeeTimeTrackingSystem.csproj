@@ -127,6 +127,7 @@
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\BaseController.cs" />
+    <Compile Include="Controllers\EmployeesController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -142,6 +143,7 @@
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
     <Content Include="Content\Site.css" />
+    <Content Include="Scripts\Ajax.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
@@ -169,6 +171,8 @@
     <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Contact.cshtml" />
     <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Employees\_List.cshtml" />
+    <Content Include="Views\Employees\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
@@ -187,6 +191,20 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.4.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.4.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\EmployeeTimeTrackingSystem.Business\EmployeeTimeTrackingSystem.Business.csproj">
+      <Project>{5D25BC47-4B65-4B3B-982B-EEFE7E816772}</Project>
+      <Name>EmployeeTimeTrackingSystem.Business</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeTimeTrackingSystem.Common\EmployeeTimeTrackingSystem.Common.csproj">
+      <Project>{E743CBCA-6561-4633-A37C-46045F0F032D}</Project>
+      <Name>EmployeeTimeTrackingSystem.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\EmployeeTimeTrackingSystem.DataAccess\EmployeeTimeTrackingSystem.DataAccess.csproj">
+      <Project>{047CDC45-27A6-4DE2-95CA-9973D63331B7}</Project>
+      <Name>EmployeeTimeTrackingSystem.DataAccess</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

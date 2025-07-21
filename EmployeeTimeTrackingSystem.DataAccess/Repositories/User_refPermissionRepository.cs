@@ -2,7 +2,6 @@
 {
     using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
     using EmployeeTimeTrackingSystem.Common.Model;
-    using InvenTree.DataAccess.Repositories;
 
     public class User_refPermissionRepository : CrudRepository<User_refPermission>, IUser_refPermissionRepository
     {

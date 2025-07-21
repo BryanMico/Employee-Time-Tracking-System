@@ -1,0 +1,38 @@
+﻿@model List<EmployeeTimeTrackingSystem.Common.Model.Employees>
+<div class="table-responsive">
+    <table class="table table-striped table-hover align-middle text-nowrap table-sm">
+        <thead class="table-light">
+            <tr>
+                <th>Disabled</th>
+                <th>Employee ID</th>
+                <th>Employee Name</th>
+                <th>Department</th>
+                <th class="text-center">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var i in Model)
+            {
+                <tr>
+                    <td><input type="checkbox" class="form-check-input chck-customer" data-id="@i.EmployeeID"></td>
+                    <td>@i.EmployeeID</td>
+                    <td>@i.FullName</td>
+                    <td>@i.Department</td>
+                    <td class="text-center">
+                        <div class="dropdown">
+                            <button class="btn btn-sm btn-outline-secondary dropdown-toggle" data-bs-toggle="dropdown">
+                                Actions
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item btn-customer btn-customer" data-id="@i.EmployeeID" href="#">Edit</a></li>
+                                <li><a class="dropdown-item text-danger btn-delete" data-id="@i.EmployeeID" href="#">Delete</a></li>
+                            </ul>
+                        </div>
+                    </td>
+                </tr>
+
+            }
+
+        </tbody>
+    </table>
+</div>

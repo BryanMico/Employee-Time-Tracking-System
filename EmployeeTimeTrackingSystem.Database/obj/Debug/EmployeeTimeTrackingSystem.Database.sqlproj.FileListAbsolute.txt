@@ -1,0 +1,9 @@
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\bin\Debug\EmployeeTimeTrackingSystem.Database.dacpac
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\bin\Debug\EmployeeTimeTrackingSystem.Database.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\bin\Debug\EmployeeTimeTrackingSystem.Database.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\obj\Debug\Model.xml
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\obj\Debug\refactor.xml
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\obj\Debug\postdeploy.sql
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\obj\Debug\predeploy.sql
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\obj\Debug\EmployeeTimeTrackingSystem.Database.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Database\obj\Debug\EmployeeTimeTrackingSystem.Database.pdb

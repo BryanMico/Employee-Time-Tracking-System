@@ -1,3 +1,5 @@
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.AssemblyReference.cache
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.dll.config
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.pdb
@@ -51,6 +53,9 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\roslyn\vbc
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\roslyn\VBCSCompiler.exe
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\roslyn\VBCSCompiler.exe.config
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Antlr3.Runtime.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Business.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Common.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.DataAccess.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EntityFramework.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EntityFramework.SqlServer.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
@@ -64,6 +69,12 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Web
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Web.WebPages.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Web.WebPages.Razor.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\WebGrease.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Business.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Business.dll.config
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Common.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Common.dll.config
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.DataAccess.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.DataAccess.dll.config
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EntityFramework.xml
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EntityFramework.SqlServer.xml
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Web.Helpers.xml
@@ -76,17 +87,6 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Web
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Newtonsoft.Json.xml
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Antlr3.Runtime.pdb
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.AssemblyReference.cache
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CopyComplete
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.pdb
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Business.dll
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Common.dll
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.DataAccess.dll
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Business.pdb
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Business.dll.config
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Common.pdb
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.Common.dll.config
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.DataAccess.pdb
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.DataAccess.dll.config

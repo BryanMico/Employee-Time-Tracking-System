@@ -1,18 +1,16 @@
-﻿using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
-using System.Web;
-using System.Web.Mvc;
-
-namespace EmployeeTimeTrackingSystem.Controllers
+﻿namespace EmployeeTimeTrackingSystem.Controllers
 {
+    using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
+    using System.Configuration;
+    using System.Web.Mvc;
+
     public class BaseController : Controller
     {
         protected string connectionString;
 
         public IEmployeesService _employeeService;
+        public IUserService _userService;
+        
 
         public BaseController()
         {

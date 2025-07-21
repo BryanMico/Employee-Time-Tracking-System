@@ -1,5 +1,3 @@
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.csproj.AssemblyReference.cache
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.csproj.CoreCompileInputs.cache
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\Debug\EmployeeTimeTrackingSystem.Business.dll.config
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\Debug\EmployeeTimeTrackingSystem.Business.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\Debug\EmployeeTimeTrackingSystem.Business.pdb
@@ -10,6 +8,8 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\D
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\Debug\EmployeeTimeTrackingSystem.Common.dll.config
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\Debug\EntityFramework.xml
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\bin\Debug\EntityFramework.SqlServer.xml
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.csproj.AssemblyReference.cache
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.csproj.CoreCompileInputs.cache
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.csproj.CopyComplete
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Business\obj\Debug\EmployeeTimeTrackingSystem.Business.pdb

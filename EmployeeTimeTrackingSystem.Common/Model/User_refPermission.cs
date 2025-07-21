@@ -14,6 +14,6 @@ namespace EmployeeTimeTrackingSystem.Common.Model
         public string Url { get; set; }
         public int? Sort { get; set; }
         public string Type { get; set; }
-        public Nullable<bool> isHide { get; set; }
+        public Nullable<bool> IsHide { get; set; }
     }
 }

@@ -1,5 +1,3 @@
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.AssemblyReference.cache
-C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.dll.config
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\EmployeeTimeTrackingSystem.pdb
@@ -87,6 +85,8 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Web
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Newtonsoft.Json.xml
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Antlr3.Runtime.pdb
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.AssemblyReference.cache
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CoreCompileInputs.cache
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CopyComplete
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.pdb

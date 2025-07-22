@@ -1,8 +1,8 @@
 ﻿:root {
-    --color-primary: #1b4965;      /* Deep Blue */
-    --color-secondary: #62b6cb;    /* Medium Blue */
-    --color-accent: #5fa8d3;       /* Accent Blue */
-    --color-background: #cae9ff;   /* Light Background */
-    --color-highlight: #bee9e8;    /* Soft Highlight */
+    --color-primary: #1b4965; /* Deep Blue */
+    --color-secondary: #62b6cb; /* Medium Blue */
+    --color-accent: #5fa8d3; /* Accent Blue */
+    --color-background: #cae9ff; /* Light Background */
+    --color-highlight: #bee9e8; /* Soft Highlight */
+    --color-error: #d9534f; /* Dark Red */
 }
-

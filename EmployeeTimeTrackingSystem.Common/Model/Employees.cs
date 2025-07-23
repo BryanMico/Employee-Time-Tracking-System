@@ -1,16 +1,20 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeTimeTrackingSystem.Common.Model
 {
     public partial class Employees
     {
+        [Key]
         public int EmployeeID { get; set; }
+
+        [Required, StringLength(100)]
         public string FullName { get; set; }
-        public string Department { get; set; }
-        public Nullable<bool> IsActive { get; set; }
+
+        [Required]
+        public int DepartmentID { get; set; }
+
+        public bool? IsActive { get; set; }
+
+        public virtual Departments Department { get; set; }
     }
 }

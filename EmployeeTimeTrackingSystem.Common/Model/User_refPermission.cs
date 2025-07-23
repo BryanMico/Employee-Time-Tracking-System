@@ -1,19 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeTimeTrackingSystem.Common.Model
 {
-    public partial class User_refPermission
+    public class User_refPermission
     {
+        [Key]
         public int PermissionID { get; set; }
+
         public int ParentID { get; set; }
+
+        [Required, StringLength(100)]
         public string Permission { get; set; }
+
+        [StringLength(200)]
         public string Url { get; set; }
+
         public int? Sort { get; set; }
+
+        [StringLength(50)]
         public string Type { get; set; }
-        public Nullable<bool> IsHide { get; set; }
+
+        public bool? IsHide { get; set; }
     }
 }

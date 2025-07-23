@@ -74,6 +74,7 @@
     <Compile Include="Model\Branches.cs" />
     <Compile Include="Model\Departments.cs" />
     <Compile Include="Model\Employees.cs" />
+    <Compile Include="Model\Role.cs" />
     <Compile Include="Model\Schedules.cs" />
     <Compile Include="Model\TimeEntries.cs" />
     <Compile Include="Model\UserBranch.cs" />

@@ -9,3 +9,4 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Common\obj\Deb
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Common\obj\Debug\EmployeeTimeTrackingSystem.Common.csproj.CopyComplete
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Common\obj\Debug\EmployeeTimeTrackingSystem.Common.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Common\obj\Debug\EmployeeTimeTrackingSystem.Common.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem.Common\obj\Debug\EmployeeTimeTrackingSystem.Common.csproj.AssemblyReference.cache

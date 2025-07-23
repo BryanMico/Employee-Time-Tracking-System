@@ -1,18 +1,26 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+using System.ComponentModel.DataAnnotations;
 
 namespace EmployeeTimeTrackingSystem.Common.Model
 {
-    public partial class TimeEntries
+    public class TimeEntries
     {
+        [Key]
         public int EntryID { get; set; }
+
+        [Required]
         public int EmployeeID { get; set; }
+
+        [Required]
         public DateTime ClockIn { get; set; }
-        public Nullable<DateTime> ClockOut { get; set; }
-        public Nullable<decimal> HoursWorked { get; set; }
+
+        public DateTime? ClockOut { get; set; }
+
+        public decimal? HoursWorked { get; set; }
+
+        [StringLength(250)]
         public string Remarks { get; set; }
+
+        public virtual Employees Employee { get; set; }
     }
 }

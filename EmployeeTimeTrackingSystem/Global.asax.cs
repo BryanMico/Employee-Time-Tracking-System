@@ -1,5 +1,7 @@
-﻿using System;
+﻿using EmployeeTimeTrackingSystem.DataAccess;
+using System;
 using System.Collections.Generic;
+using System.Configuration;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -16,6 +18,13 @@ namespace EmployeeTimeTrackingSystem
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            var connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
+
+            using (var context = new MyContext(connectionString))
+            {
+                DatabaseSeeder.Seed(context);
+            }
         }
     }
 }

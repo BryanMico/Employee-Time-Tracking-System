@@ -38,17 +38,8 @@ namespace EmployeeTimeTrackingSystem.Controllers
             }
 
             var branch = _branchesService.Get(b => b.BranchID == id).FirstOrDefault();
-            if (branch == null)
-                return HttpNotFound();
 
-            var vmBranch = new BranchVM
-            {
-                BranchID = branch.BranchID,
-                BranchName = branch.BranchName,
-                IsDisabled = branch.IsDisabled,
-            };
-
-            return RedirectToAction("Dashboard", "Home", new { branchId = branch.BranchID });
+            return RedirectToAction("Index", "BranchPortal", new { branchId = branch.BranchID });
         }
 
 
@@ -64,7 +55,7 @@ namespace EmployeeTimeTrackingSystem.Controllers
             }
 
             UserAuthentication.BranchID = model.SelectedBranchId.Value;
-            return RedirectToAction("Index", "Home");
+            return RedirectToAction("Index", "BranchPortal");
         }
     }
 }

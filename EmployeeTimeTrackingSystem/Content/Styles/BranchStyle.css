@@ -1,10 +1,4 @@
-﻿body {
-    background: linear-gradient(30deg, var(--color-highlight), var(--color-secondary));
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    overflow: hidden;
-}
-
-.branch-card-container {
+﻿.branch-card-container {
     min-height: 100vh;
     display: flex;
     align-items: start;

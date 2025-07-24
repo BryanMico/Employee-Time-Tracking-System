@@ -6,3 +6,15 @@
     --color-highlight: #bee9e8; /* Soft Highlight */
     --color-error: #d9534f; /* Dark Red */
 }
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    overflow: hidden;
+    padding-top: 50px;
+}
+
+.main-content {
+    margin-right: 210px;
+    margin-left: 210px;
+    padding: 20px;
+}

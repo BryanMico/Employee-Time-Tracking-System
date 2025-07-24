@@ -1,0 +1,21 @@
+﻿.custom-navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 50px;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    z-index: 1050;
+    color: white;
+    font-weight: bold;
+}
+
+    .custom-navbar .brand {
+        font-size: 18px;
+        text-decoration: none;
+        color: white;
+    }

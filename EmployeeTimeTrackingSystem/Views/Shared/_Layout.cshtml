@@ -6,38 +6,51 @@
     <title>@ViewBag.Title - My ASP.NET Application</title>
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/modernizr")
+    <link rel="stylesheet" href="~/Content/Styles/NavbarStyle.css" />
+    <link rel="stylesheet" href="~/Content/Styles/SidebarStyle.css" />
+
 </head>
 <body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Application name", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
-                    <li>@Html.ActionLink("Home", "Index", "Home")</li>
-                    <li>@Html.ActionLink("About", "About", "Home")</li>
-                    <li>@Html.ActionLink("Contact", "Contact", "Home")</li>
-                </ul>
-            </div>
-        </div>
+    <div class="custom-navbar">
+        <a href="@Url.Action("Index", "Home")" class="brand">ETTS</a>
     </div>
-    <div class="container body-content">
+
+    <div id="sidebar" class="sidebar">
+        <button id="sidebarToggle">← Hide</button>
+
+        <div class="sidebar-links">
+            <a href="@Url.Action("Index", "Home")" class="@(ViewContext.RouteData.Values["controller"].ToString() == "Home" ? "active" : "")">Home</a>
+            <a href="@Url.Action("About", "Home")" class="@(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active" : "")">About This</a>
+            <a href="@Url.Action("Contact", "Home")" class="@(ViewContext.RouteData.Values["action"].ToString() == "Contact" ? "active" : "")">Contact Us</a>
+            <a href="@Url.Action("SelectBranch", "Branch")">Select Branch</a>
+        </div>
+
+        <a href="@Url.Action("Logout", "Account")" class="logout-link">Logout</a>
+    </div>
+
+    <div id="mainContent" class="main-content">
         @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-        </footer>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
+
+    <script>
+        $(document).ready(function () {
+            $('#sidebarToggle').click(function () {
+                $('#sidebar').toggleClass('collapsed');
+                $('#mainContent').toggleClass('expanded');
+
+                if ($('#sidebar').hasClass('collapsed')) {
+                    $('#sidebarToggle').text('Open →');
+                } else {
+                    $('#sidebarToggle').text('← Hide');
+                }
+            });
+        });
+    </script>
+
     @RenderSection("scripts", required: false)
 </body>
 </html>

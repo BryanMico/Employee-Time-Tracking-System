@@ -38,9 +38,16 @@
 
             if (userlog != null)
             {
-
-                UserAuthentication.SetAuthentication(userlog);
-                return RedirectToAction("Index", "Branch");
+                if (userlog.RoleID == 1)
+                {
+                    UserAuthentication.SetAuthentication(userlog);
+                    return RedirectToAction("Index", "Branch");
+                }
+                else
+                {
+                    UserAuthentication.SetAuthentication(userlog);
+                    return RedirectToAction("Index", "BranchPortal");
+                }
             }
 
             ModelState.AddModelError("", "The user name or password you’ve entered is incorrect");

@@ -1,0 +1,129 @@
+﻿.sidebar {
+    position: fixed;
+    top: 50px;
+    bottom: 0;
+    left: 0;
+    width: 220px;
+    border-right: solid 1px var(--color-primary);
+    background-color: var(--color-background);
+    padding: 20px;
+    transition: width 0.3s ease;
+    overflow-x: hidden;
+    overflow-y: auto;
+    z-index: 1000;
+    white-space: normal;
+    display: flex;
+    flex-direction: column;
+}
+
+    .sidebar.collapsed {
+        width: 70px;
+        padding: 10px 5px;
+    }
+
+    .sidebar a {
+        display: flex;
+        flex-direction: column;
+        padding: 10px 12px;
+        color: black;
+        text-decoration: none;
+        margin: 5px 0;
+        border-radius: 4px;
+        border: none;
+        cursor: pointer;
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-wrap: break-word;
+        word-break: break-word;
+        box-sizing: border-box;
+        transition: all 0.3s ease;
+    }
+
+        .sidebar a:hover,
+        .sidebar a.active {
+            background-color: var(--color-primary);
+            color: white;
+        }
+
+.sidebar-links {
+    flex-grow: 1;
+    margin-top: 40px;
+}
+
+.logout-link {
+    margin-top: auto;
+    padding: 10px 12px;
+    color: black;
+    border-radius: 4px;
+    text-decoration: none;
+}
+
+    .logout-link:hover {
+        background-color: var(--color-primary);
+        color: white;
+    }
+
+.sidebar.collapsed a {
+    width: 50px;
+    height: 40px;
+    font-size: 10px;
+    margin: 5px auto;
+    padding: 6px 4px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: var(--color-primary);
+    color: white;
+    border-radius: 4px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+    .sidebar.collapsed a:hover,
+    .sidebar.collapsed a.active {
+        background: var(--color-accent);
+    }
+
+.sidebar.collapsed .logout-link {
+    width: 50px;
+    height: 40px;
+    font-size: 10px;
+    margin: 5px auto 0;
+    padding: 6px 4px;
+    background-color: var(--color-primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+#sidebarToggle {
+    align-self: flex-end;
+    background-color: var(--color-primary);
+    border: none;
+    cursor: pointer;
+    color: white;
+    font-size: 12px;
+    padding: 6px 8px;
+    user-select: none;
+    height: 30px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    transition: all 0.3s ease;
+}
+
+    #sidebarToggle:hover {
+        background: var(--color-accent);
+        outline: none;
+    }
+
+.sidebar.collapsed #sidebarToggle {
+    width: 50px;
+    font-size: 10px;
+    padding: 6px 4px;
+    margin: 0 auto 10px;
+}

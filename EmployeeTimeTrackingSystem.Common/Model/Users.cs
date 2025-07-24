@@ -22,6 +22,9 @@ namespace EmployeeTimeTrackingSystem.Common.Model
         public int RoleID { get; set; }
         public virtual Role Role { get; set; }
 
+        public int? BranchID { get; set; }
+        public virtual Branches Branch { get; set; }
+
         public int? EmployeeID { get; set; }
         public virtual Employees Employee { get; set; }
     }

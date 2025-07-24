@@ -1,0 +1,43 @@
+﻿@model EmployeeTimeTrackingSystem.Models.BranchSelectionVM
+
+@{
+    ViewBag.Title = "Choose Your Branch";
+    Layout = null;
+}
+
+<title>@ViewBag.Title</title>
+<link rel="stylesheet" href="~/Content/Site.css" />
+<link rel="stylesheet" href="~/Content/Styles/BranchStyle.css" />
+
+<div class="branch-card-container">
+    <div class="branch-card">
+        <h2>Welcome, @Model.UserName</h2>
+        <p>Please select your branch below to continue.</p>
+
+        @using (Html.BeginForm("SelectBranch", "Branch", FormMethod.Post))
+        {
+            @Html.AntiForgeryToken()
+
+            <div class="branch-form-group">
+                <select id="SelectedBranchId" name="SelectedBranchId" class="branch-select" required>
+                    <option value="" disabled selected>--Click to see all the branches--</option>
+                    @foreach (var branch in Model.BranchList)
+                    {
+                        <option value="@branch.BranchID" @(branch.BranchID == Model.SelectedBranchId ? "selected" : "")>
+                            @branch.BranchName
+                        </option>
+                    }
+                </select>
+            </div>
+
+            if (ViewData.ModelState["SelectedBranchId"]?.Errors.Any() == true)
+            {
+                <div class="branch-error">
+                    @Html.ValidationMessageFor(m => m.SelectedBranchId)
+                </div>
+            }
+
+            <button type="submit" class="branch-btn">Proceed</button>
+        }
+    </div>
+</div>

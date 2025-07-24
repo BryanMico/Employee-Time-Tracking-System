@@ -10,7 +10,7 @@
 
         public IEmployeesService _employeeService;
         public IUserService _userService;
-        
+        public IBranchesService _branchesService;
 
         public BaseController()
         {

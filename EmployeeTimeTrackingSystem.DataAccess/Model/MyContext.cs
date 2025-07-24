@@ -50,6 +50,7 @@ namespace EmployeeTimeTrackingSystem.DataAccess
             modelBuilder.Entity<UserBranch>().HasRequired(ub => ub.Branch).WithMany().HasForeignKey(ub => ub.BranchID).WillCascadeOnDelete(false);
 
             modelBuilder.Entity<Branches>().ToTable("Branches", "dbo").HasKey(b => b.BranchID);
+            modelBuilder.Entity<Users>().HasOptional(u => u.Branch).WithMany().HasForeignKey(u => u.BranchID);
 
             modelBuilder.Entity<User_refPermission>().ToTable("User_refPermissions", "dbo").HasKey(p => p.PermissionID);
         }

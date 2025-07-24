@@ -10,6 +10,9 @@
 
     public class UserManagementController : BaseController
     {
+
+        private new readonly UserService _userService;
+
         public UserManagementController()
         {
             _userService = new UserService(new UserRepository(connectionString));
@@ -37,12 +40,13 @@
             {
 
                 UserAuthentication.SetAuthentication(userlog);
-                return RedirectToAction("Index", "Home");
+                return RedirectToAction("Index", "Branch");
             }
 
             ModelState.AddModelError("", "The user name or password you’ve entered is incorrect");
             return View("~/Views/UserManagement/UserLogin.cshtml", user);
         }
+
 
         public string Md5Generator(string password)
         {
@@ -58,5 +62,13 @@
                 return sb.ToString();
             }
         }
+
+        public ActionResult Logout()
+        {
+            Session.Clear();
+            Session.Abandon();
+            return RedirectToAction("UserLogin");
+        }
+
     }
 }

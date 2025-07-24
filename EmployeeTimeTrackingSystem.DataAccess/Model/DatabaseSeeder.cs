@@ -1,62 +1,70 @@
-﻿using EmployeeTimeTrackingSystem.Common.Model;
+﻿using EmployeeTimeTrackingSystem.Common.Contracts.Service;
+using EmployeeTimeTrackingSystem.Common.Model;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 
 namespace EmployeeTimeTrackingSystem.DataAccess
 {
-    public static class DatabaseSeeder
+    public class DatabaseSeeder: IDatabaseSeeder
     {
-        public static void Seed(MyContext context)
+        private readonly MyContext _context;
+
+        public DatabaseSeeder(MyContext context)
         {
-            if (!context.Departments.Any())
+            _context = context;
+        }
+
+        public void Seed()
+        {
+            if (!_context.Departments.Any())
             {
-                context.Departments.AddRange(new List<Departments>
+                _context.Departments.AddRange(new List<Departments>
                 {
                     new Departments { DepartmentID = 1, DepartmentName = "IT", IsActive = true },
                     new Departments { DepartmentID = 2, DepartmentName = "HR", IsActive = true },
                     new Departments { DepartmentID = 3, DepartmentName = "Finance", IsActive = true },
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.Roles.Any())
+            if (!_context.Roles.Any())
             {
-                context.Roles.AddRange(new List<Role>
+                _context.Roles.AddRange(new List<Role>
                 {
                     new Role { RoleID = 1, RoleName = "Admin", Description = "System Administrator" },
                     new Role { RoleID = 2, RoleName = "Employee", Description = "Regular Employee" },
                     new Role { RoleID = 3, RoleName = "Manager", Description = "Department Manager" },
                     new Role { RoleID = 4, RoleName = "Supervisor", Description = "Team Supervisor" },
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.Branches.Any())
+            if (!_context.Branches.Any())
             {
-                context.Branches.AddRange(new List<Branches>
+                _context.Branches.AddRange(new List<Branches>
                 {
                     new Branches { BranchID = 1, BranchName = "Head Office", IsDisabled = false },
                     new Branches { BranchID = 2, BranchName = "Satellite Office", IsDisabled = false },
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.Employees.Any())
+            if (!_context.Employees.Any())
             {
-                context.Employees.AddRange(new List<Employees>
+                _context.Employees.AddRange(new List<Employees>
                 {
                     new Employees { EmployeeID = 1, FullName = "Admin", DepartmentID = 1, IsActive = true },
                     new Employees { EmployeeID = 2, FullName = "Employee", DepartmentID = 2, IsActive = true },
                     new Employees { EmployeeID = 3, FullName = "Manager", DepartmentID = 3, IsActive = true },
                     new Employees { EmployeeID = 4, FullName = "Supervisor", DepartmentID = 1, IsActive = true },
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.Users.Any())
+            if (!_context.Users.Any())
             {
-                context.Users.AddRange(new List<Users>
+                _context.Users.AddRange(new List<Users>
                 {
                     new Users
                     {
@@ -99,24 +107,24 @@ namespace EmployeeTimeTrackingSystem.DataAccess
                         EmployeeID = 4
                     }
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.UserBranches.Any())
+            if (!_context.UserBranches.Any())
             {
-                context.UserBranches.AddRange(new List<UserBranch>
+                _context.UserBranches.AddRange(new List<UserBranch>
                 {
                     new UserBranch { UserID = 1, BranchID = 1 },
                     new UserBranch { UserID = 2, BranchID = 2 },
                     new UserBranch { UserID = 3, BranchID = 1 },
                     new UserBranch { UserID = 4, BranchID = 2 },
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.Schedules.Any())
+            if (!_context.Schedules.Any())
             {
-                context.Schedules.AddRange(new List<Schedules>
+                _context.Schedules.AddRange(new List<Schedules>
                 {
                     new Schedules
                     {
@@ -143,12 +151,12 @@ namespace EmployeeTimeTrackingSystem.DataAccess
                         DayOfWeek = "Monday"
                     }
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.TimeEntries.Any())
+            if (!_context.TimeEntries.Any())
             {
-                context.TimeEntries.AddRange(new List<TimeEntries>
+                _context.TimeEntries.AddRange(new List<TimeEntries>
                 {
                     new TimeEntries
                     {
@@ -169,12 +177,12 @@ namespace EmployeeTimeTrackingSystem.DataAccess
                         Remarks = "Late arrival due to meeting"
                     }
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
 
-            if (!context.AuditLogs.Any())
+            if (!_context.AuditLogs.Any())
             {
-                context.AuditLogs.AddRange(new List<AuditLogs>
+                _context.AuditLogs.AddRange(new List<AuditLogs>
                 {
                     new AuditLogs
                     {
@@ -193,7 +201,7 @@ namespace EmployeeTimeTrackingSystem.DataAccess
                         Description = "Started work shift"
                     }
                 });
-                context.SaveChanges();
+                _context.SaveChanges();
             }
         }
     }

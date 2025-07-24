@@ -5,7 +5,7 @@ namespace EmployeeTimeTrackingSystem.DataAccess
 {
     public class MyContext : DbContext
     {
-        public MyContext(string connectionString) : base(connectionString)
+        public MyContext() : base("ConnectionString")
         {
             Database.SetInitializer(new CreateDatabaseIfNotExists<MyContext>());
         }

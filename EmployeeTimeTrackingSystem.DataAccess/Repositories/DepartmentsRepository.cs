@@ -5,7 +5,7 @@
 
     public class DepartmentsRepository : CrudRepository<Departments>, IDepartmentsRepository
     {
-        public DepartmentsRepository(string connectionString) : base(new MyContext(connectionString))
+        public DepartmentsRepository() : base(new MyContext())
         {
         }
     }

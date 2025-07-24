@@ -5,7 +5,7 @@
 
     public class BranchesService : BaseService<Branches>, IBranchesService
     {
-        private IBranchesRepository _repository;
+        private readonly IBranchesRepository _repository;
         public BranchesService(IBranchesRepository repository) : base(repository)
         {
             _repository = repository;

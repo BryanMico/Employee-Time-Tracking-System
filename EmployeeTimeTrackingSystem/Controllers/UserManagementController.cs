@@ -7,15 +7,16 @@
     using EmployeeTimeTrackingSystem.DataAccess.Repositories;
     using System.Linq;
     using EmployeeTimeTrackingSystem.Helpers;
+    using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
 
     public class UserManagementController : BaseController
     {
 
-        private new readonly UserService _userService;
+        private readonly IUserService _userService;
 
-        public UserManagementController()
+        public UserManagementController(IUserService userService)
         {
-            _userService = new UserService(new UserRepository(connectionString));
+            _userService = userService;
         }
 
         public ActionResult UserLogin()

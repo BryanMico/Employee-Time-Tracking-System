@@ -5,7 +5,7 @@
 
     public class UserRepository : CrudRepository<Users>, IUserRepository
     {
-        public UserRepository(string connectionString) : base(new MyContext(connectionString))
+        public UserRepository() : base(new MyContext())
         {
         }
     }

@@ -1,4 +1,5 @@
-﻿using EmployeeTimeTrackingSystem.DataAccess;
+﻿using EmployeeTimeTrackingSystem.Common.Contracts.Service;
+using EmployeeTimeTrackingSystem.DataAccess;
 using System;
 using System.Collections.Generic;
 using System.Configuration;
@@ -14,17 +15,16 @@ namespace EmployeeTimeTrackingSystem
     {
         protected void Application_Start()
         {
+            UnityConfig.RegisterComponents();
             AreaRegistration.RegisterAllAreas();
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
 
-            var connectionString = ConfigurationManager.ConnectionStrings["ConnectionString"].ConnectionString;
 
-            using (var context = new MyContext(connectionString))
-            {
-                DatabaseSeeder.Seed(context);
-            }
+            var seeder = DependencyResolver.Current.GetService<IDatabaseSeeder>();
+            seeder.Seed();
+
         }
     }
 }

@@ -5,7 +5,7 @@
 
     public class SchedulesRepository : CrudRepository<Schedules>, ISchedulesRepository
     {
-        public SchedulesRepository(string connectionString) : base(new MyContext(connectionString))
+        public SchedulesRepository() : base(new MyContext())
         {
         }
     }

@@ -5,7 +5,7 @@
 
     public class TimeEntriesRepository : CrudRepository<TimeEntries>, ITimeEntriesRepository
     {
-        public TimeEntriesRepository(string connectionString) : base(new MyContext(connectionString))
+        public TimeEntriesRepository() : base(new MyContext())
         {
         }
     }

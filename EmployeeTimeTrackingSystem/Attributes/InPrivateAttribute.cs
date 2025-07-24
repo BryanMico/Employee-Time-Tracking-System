@@ -11,21 +11,20 @@
             {
                 if (UserAuthentication.UserId == 0)
                 {
-                    filterContext.Result = new JsonResult()
+                    if (filterContext.HttpContext.Request.IsAjaxRequest())
                     {
-                        JsonRequestBehavior = JsonRequestBehavior.AllowGet,
-                        Data = new { sessionexpired = true, message = "Session expired" }
-                    };
-                }
-                else
-                {
-                    if (UserAuthentication.UserId == 0)
+                        filterContext.Result = new JsonResult()
+                        {
+                            JsonRequestBehavior = JsonRequestBehavior.AllowGet,
+                            Data = new { sessionexpired = true, message = "Session expired" }
+                        };
+                    }
+                    else
                     {
                         filterContext.HttpContext.Response.Redirect("~/UserManagement/UserLogin");
                     }
-
                 }
-    
+
             }
 
 

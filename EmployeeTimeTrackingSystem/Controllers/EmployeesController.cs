@@ -1,14 +1,17 @@
 ﻿namespace EmployeeTimeTrackingSystem.Controllers
 {
     using EmployeeTimeTrackingSystem.Business;
+    using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
     using EmployeeTimeTrackingSystem.DataAccess.Repositories;
     using System.Web.Mvc;
 
     public class EmployeesController : BaseController
     {
-        public EmployeesController()
+        private readonly IEmployeesService _employeeService;
+
+        public EmployeesController(IEmployeesService employeeService)
         {
-            _employeeService = new EmployeesService(new EmployeesRepository(connectionString));
+            _employeeService = employeeService;
         }
 
         public ActionResult Index()

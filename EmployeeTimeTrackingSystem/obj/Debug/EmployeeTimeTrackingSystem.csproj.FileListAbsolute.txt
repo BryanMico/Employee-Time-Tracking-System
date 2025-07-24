@@ -90,3 +90,11 @@ C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\Empl
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.csproj.CopyComplete
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.dll
 C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\obj\Debug\EmployeeTimeTrackingSystem.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Runtime.CompilerServices.Unsafe.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Unity.Abstractions.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Unity.Container.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Unity.Mvc5.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Threading.Tasks.Extensions.dll
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\System.Runtime.CompilerServices.Unsafe.xml
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Unity.Abstractions.pdb
+C:\Projects\EmployeeTimeTrackingSystem\EmployeeTimeTrackingSystem\bin\Unity.Container.pdb

@@ -5,7 +5,7 @@
 
     public class AuditLogsRepository : CrudRepository<AuditLogs>, IAuditLogsRepository
     {
-        public AuditLogsRepository(string connectionString) : base(new MyContext(connectionString))
+        public AuditLogsRepository() : base(new MyContext())
         {
         }
     }

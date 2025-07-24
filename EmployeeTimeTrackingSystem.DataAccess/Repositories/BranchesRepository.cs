@@ -5,7 +5,7 @@
 
     public class BranchesRepository : CrudRepository<Branches>, IBranchesRepository
     {
-        public BranchesRepository(string connectionString) : base(new MyContext(connectionString))
+        public BranchesRepository() : base(new MyContext())
         {
         }
     }

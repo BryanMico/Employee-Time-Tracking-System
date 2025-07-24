@@ -64,8 +64,9 @@
         {
             get
             {
-                var roleName = HttpContext.Current.Session["RoleName"].ToString();
+                var roleName = HttpContext.Current.Session["RoleName"];
                 return roleName != null ? roleName.ToString() : string.Empty;
+
             }
             set
             {

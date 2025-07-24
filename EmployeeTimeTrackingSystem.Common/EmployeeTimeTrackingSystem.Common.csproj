@@ -62,6 +62,7 @@
     <Compile Include="Contracts\Repository\IUser_refPermissionRepository.cs" />
     <Compile Include="Contracts\Service\IAuditLogsService.cs" />
     <Compile Include="Contracts\Service\IBranchesService.cs" />
+    <Compile Include="Contracts\Service\IDatabaseSeeder.cs" />
     <Compile Include="Contracts\Service\IDepartmentsService.cs" />
     <Compile Include="Contracts\Service\IEmployeesService.cs" />
     <Compile Include="Contracts\Service\ISchedulesService.cs" />

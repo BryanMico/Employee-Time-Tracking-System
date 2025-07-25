@@ -36,20 +36,7 @@
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
 
-    <script>
-        $(document).ready(function () {
-            $('#sidebarToggle').click(function () {
-                $('#sidebar').toggleClass('collapsed');
-                $('#mainContent').toggleClass('expanded');
-
-                if ($('#sidebar').hasClass('collapsed')) {
-                    $('#sidebarToggle').text('Open →');
-                } else {
-                    $('#sidebarToggle').text('← Hide');
-                }
-            });
-        });
-    </script>
+    <script src="~/Scripts/CustomScripts/LayoutScript.js"></script>
 
     @RenderSection("scripts", required: false)
 </body>

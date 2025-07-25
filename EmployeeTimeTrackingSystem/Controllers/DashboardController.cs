@@ -6,7 +6,7 @@ using System.Web.Mvc;
 
 namespace EmployeeTimeTrackingSystem.Controllers
 {
-    public class BranchPortalController : Controller
+    public class DashboardController : Controller
     {
         // GET: BranchPortal
         public ActionResult Index()

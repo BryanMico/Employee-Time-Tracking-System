@@ -41,7 +41,7 @@ namespace EmployeeTimeTrackingSystem.Controllers
                 return HttpNotFound();
             }
 
-            return RedirectToAction("Index", "BranchPortal", new { branchId = branch.BranchID });
+            return RedirectToAction("Index", "Dashboard", new { branchId = branch.BranchID });
         }
 
         [HttpPost]
@@ -56,7 +56,7 @@ namespace EmployeeTimeTrackingSystem.Controllers
             }
 
             UserAuthentication.BranchID = model.SelectedBranchId.Value;
-            return RedirectToAction("Index", "BranchPortal");
+            return RedirectToAction("Index", "Dashboard");
         }
     }
 }

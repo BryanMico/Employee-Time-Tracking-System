@@ -1,0 +1,33 @@
+﻿@{
+    ViewBag.Title = "Admin Dashboard";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<style>
+    .dashboard-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 2px solid #dee2e6;
+        margin-bottom: 20px;
+        padding: 10px 0;
+    }
+
+        .dashboard-header h2 {
+            font-size: 1.8rem;
+            color: #343a40;
+            margin: 0;
+        }
+
+        .dashboard-header .date {
+            font-size: 1rem;
+            color: #6c757d;
+            font-weight: 500;
+        }
+</style>
+
+<div class="dashboard-header">
+    <h2>Dashboard</h2>
+    <div class="date">@DateTime.Now.ToString("dddd, MMMM dd, yyyy")</div>
+</div>
+

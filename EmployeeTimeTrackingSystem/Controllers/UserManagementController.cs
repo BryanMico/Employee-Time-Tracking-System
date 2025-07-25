@@ -39,6 +39,10 @@
 
             if (userlog != null)
             {
+
+                Session["RealName"] = userlog.RealName;
+                Session["RoleName"] = userlog.Role?.RoleName ?? "User";
+
                 if (userlog.RoleID == 1)
                 {
                     UserAuthentication.SetAuthentication(userlog);
@@ -47,7 +51,7 @@
                 else
                 {
                     UserAuthentication.SetAuthentication(userlog);
-                    return RedirectToAction("Index", "BranchPortal");
+                    return RedirectToAction("Index", "Dashboard");
                 }
             }
 

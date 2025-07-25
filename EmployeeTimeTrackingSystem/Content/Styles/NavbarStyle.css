@@ -6,8 +6,8 @@
     height: 50px;
     background-color: var(--color-primary);
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: column;
+    align-items: flex-start;
     padding: 0 20px;
     z-index: 1050;
     color: white;
@@ -17,5 +17,10 @@
     .custom-navbar .brand {
         font-size: 18px;
         text-decoration: none;
+        color: white;
+    }
+
+    .custom-navbar .subtitle {
+        font-size: 1rem;
         color: white;
     }

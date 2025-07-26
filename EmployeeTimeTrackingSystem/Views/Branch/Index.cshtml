@@ -8,13 +8,9 @@
 <title>@ViewBag.Title</title>
 <link rel="stylesheet" href="~/Content/Site.css" />
 <link rel="stylesheet" href="~/Content/Styles/BranchStyle.css" />
-<link rel="stylesheet" href="~/Content/Styles/NavbarStyle.css" />
 
+@Html.Partial("_Navbar")
 
-<div class="custom-navbar">
-    <a href="@Url.Action("Index", "Home")" class="brand">ETTS</a>
-    <span>Employee Time Tracking System</span>
-</div>
 
 <div class="branch-card-container">
     <div class="branch-card">

@@ -9,7 +9,7 @@
     using EmployeeTimeTrackingSystem.Helpers;
     using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
 
-    public class UserManagementController : BaseController
+    public class UserManagementController : Controller
     {
 
         private readonly IUserService _userService;

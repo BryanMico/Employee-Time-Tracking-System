@@ -5,13 +5,9 @@
 }
 <link rel="stylesheet" href="~/Content/Site.css" />
 <link rel="stylesheet" href="~/Content/Styles/UserLoginStyle.css" />
-<link rel="stylesheet" href="~/Content/Styles/NavbarStyle.css" />
+<link rel="stylesheet" href="~/Content/Styles/ValidationStyle.css" />
 
-
-<div class="custom-navbar">
-    <a href="@Url.Action("Index", "Home")" class="brand">ETTS</a>
-    <span class="subtitle">Employee Time Tracking System</span>
-</div>
+@Html.Partial("_Navbar")
 
 <div class="login-card-container">
     <div class="login-card">
@@ -29,6 +25,17 @@
                 @Html.PasswordFor(m => m.Password, new { @class = "login-input", placeholder = "Type your password" })
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "login-error" })
             </div>
+            if (!ViewData.ModelState.IsValid)
+            {
+                <div class="alert alert-danger" id="loginError">
+                    <span class="close-btn" onclick="closeAlert('loginError')">&times;</span>
+
+                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
+                    {
+                        <p>@error.ErrorMessage</p>
+                    }
+                </div>
+            }
             <div class="login-form-group">
                 <input type="submit" value="Login" class="login-btn" />
             </div>
@@ -38,15 +45,4 @@
 
 @Scripts.Render("~/bundles/jquery")
 @Scripts.Render("~/bundles/jqueryval")
-
-<script>
-    function enableLiveValidation(selector) {
-        $(selector).on('input', function () {
-            $(this).valid();
-        });
-    }
-
-    $(document).ready(function () {
-        enableLiveValidation('.login-input');
-    });
-</script>
+<script src="~/Scripts/CustomScripts/ValidationScript.js"></script>

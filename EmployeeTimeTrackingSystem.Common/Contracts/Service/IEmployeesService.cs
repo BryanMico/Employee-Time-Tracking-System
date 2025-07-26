@@ -5,5 +5,6 @@
 
     public interface IEmployeesService : IService<Employees>
     {
+        int Count();
     }
 }

@@ -13,7 +13,7 @@
 <body>
     <div class="custom-navbar">
         <a href="@Url.Action("Index", "Home")" class="brand">ETTS</a>
-        <span class="subtitle">Employee Time Tracking System</span>
+        <span>Employee Time Tracking System</span>
     </div>
 
     <div id="sidebar" class="sidebar">
@@ -39,16 +39,57 @@
 
 
         <div class="sidebar-links">
+
+            <!-- Dashboard -->
             <a id="iconDashboard" href="@Url.Action("Index", "Dashboard")"
                class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Dashboard" ? "active" : "")">
-                <span class="link-content">Dashboard</span>
+                <span class="link-content"></span>
             </a>
-            <a href="@Url.Action("About", "Home")" class="@(ViewContext.RouteData.Values["action"].ToString() == "About" ? "active" : "")">About This</a>
-            <a href="@Url.Action("Contact", "Home")" class="@(ViewContext.RouteData.Values["action"].ToString() == "Contact" ? "active" : "")">Contact Us</a>
-            <a href="@Url.Action("SelectBranch", "Branch")">Select Branch</a>
+
+            <!-- Time Management -->
+            <a id="iconTimeManagement" href="@Url.Action("Index", "TimeManagement")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "TimeManagement" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
+
+            <!-- User Management -->
+            <a id="iconUserManagement" href="@Url.Action("Index", "UserManagement")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "UserManagement" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
+
+            <!-- Employee Management -->
+            <a id="iconEmployeeManagement" href="@Url.Action("Index", "Employee")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Employee" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
+
+            <!-- Schedule Management -->
+            <a id="iconScheduleManagement" href="@Url.Action("Index", "Schedule")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Schedule" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
+
+            <!-- Branch Management -->
+            <a id="iconBranchManagement" href="@Url.Action("Index", "Branch")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Branch" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
+
+            <!-- Reports -->
+            <a id="iconReports" href="@Url.Action("Index", "Reports")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "Reports" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
+
+            <!-- System -->
+            <a id="iconSystem" href="@Url.Action("Index", "System")"
+               class="nav-link @(ViewContext.RouteData.Values["controller"].ToString() == "System" ? "active" : "")">
+                <span class="link-content"></span>
+            </a>
         </div>
 
-        <a id="iconLogout" href="@Url.Action("Logout", "UserManagement")" class="logout-link"><span class="link-content">Logout</span></a>
+        <a id="iconLogout" href="@Url.Action("Logout", "UserManagement")" class="nav-link logout-link"><span class="link-content"></span></a>
     </div>
 
     <div id="mainContent" class="main-content">

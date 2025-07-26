@@ -11,6 +11,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding-top: 40px;
     overflow: hidden;
+    font-size: 12px;
 }
 
 .main-content {

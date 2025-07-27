@@ -13,12 +13,16 @@
     @Html.Partial("_Sidebar")
     <div id="mainContent" class="main-content">
         @RenderBody()
+        <div class="spinner" style="display:none;"></div>
     </div>
 
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/jqueryval")
     @Scripts.Render("~/bundles/bootstrap")
 
+    <script src="~/Helpers/ajaxHelper.js"></script>
+
     @RenderSection("scripts", required: false)
+
 </body>
 </html>

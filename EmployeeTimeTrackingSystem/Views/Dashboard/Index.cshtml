@@ -7,6 +7,7 @@
 }
 
 <link rel="stylesheet" href="~/Content/Styles/DashboardStyle.css" />
+<link rel="stylesheet" href="~/Content/Styles/ValidationStyle.css" />
 
 <div class="dashboard-header">
     <div class="header-left">
@@ -15,5 +16,26 @@
     </div>
     <div class="date">@now</div>
 </div>
+<div id="dashboard-cards"></div>
 
-@Html.Partial("_Cards", Model)
+@section scripts {
+    <script>
+        async function loadDashboardCards() {
+            const html = await requestAsyncWithRetry('/Dashboard/Cards', {}, 'GET', {
+                retries: 2,
+                timeout: 8000,
+                showSpinner: true
+            });
+
+            if (html) {
+                $('#dashboard-cards').html(html);
+            } else {
+                $('#dashboard-cards').html('<div class="alert alert-danger">Failed to load dashboard data.</div>');
+            }
+        }
+
+        $(document).ready(function () {
+            loadDashboardCards();
+        });
+    </script>
+}

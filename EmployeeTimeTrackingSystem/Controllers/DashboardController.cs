@@ -17,9 +17,9 @@ namespace EmployeeTimeTrackingSystem.Controllers
             _attendanceService = attendanceService;
         }
 
-        public ActionResult Index()
+        public PartialViewResult Cards()
         {
-            var viewModel = new DashboardCardViewModel
+            var cardCounts = new DashboardCardViewModel
             {
                 TotalEmployees = _employeesService.Count(),
                 PresentToday = _attendanceService.CountPresent(DateTime.Today),
@@ -27,7 +27,13 @@ namespace EmployeeTimeTrackingSystem.Controllers
                 AbsentToday = _attendanceService.CountAbsent(DateTime.Today)
             };
 
-            return View(viewModel);
+            return PartialView("_Cards", cardCounts);
+
+        }
+
+        public ActionResult Index()
+        {
+            return View();
         }
     }
 }

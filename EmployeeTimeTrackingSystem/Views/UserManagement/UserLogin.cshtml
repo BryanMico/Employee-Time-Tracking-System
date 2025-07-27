@@ -12,7 +12,7 @@
 <div class="login-card-container">
     <div class="login-card">
         <h2>Log in to your account</h2>
-        @using (Html.BeginForm("UserLogin", "UserManagement", FormMethod.Post))
+        @using (Html.BeginForm("UserLogin", "UserManagement", FormMethod.Post, new { id = "loginForm" }))
         {
             @Html.AntiForgeryToken()
             <div class="login-form-group">
@@ -25,17 +25,10 @@
                 @Html.PasswordFor(m => m.Password, new { @class = "login-input", placeholder = "Type your password" })
                 @Html.ValidationMessageFor(m => m.Password, "", new { @class = "login-error" })
             </div>
-            if (!ViewData.ModelState.IsValid)
-            {
-                <div class="alert alert-danger" id="loginError">
-                    <span class="close-btn" onclick="closeAlert('loginError')">&times;</span>
-
-                    @foreach (var error in ViewData.ModelState.Values.SelectMany(v => v.Errors))
-                    {
-                        <p>@error.ErrorMessage</p>
-                    }
-                </div>
-            }
+            <div id="loginError" class="alert alert-danger" style="display:none;">
+                <span class="close-btn" onclick="closeAlert('loginError')">&times;</span>
+                <div id="loginErrorMessages"></div>
+            </div>
             <div class="login-form-group">
                 <input type="submit" value="Login" class="login-btn" />
             </div>

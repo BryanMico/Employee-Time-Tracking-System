@@ -1,9 +1,4 @@
 ﻿using EmployeeTimeTrackingSystem.Common.Contracts.Service;
-using EmployeeTimeTrackingSystem.DataAccess;
-using System;
-using System.Collections.Generic;
-using System.Configuration;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using System.Web.Optimization;
@@ -25,6 +20,16 @@ namespace EmployeeTimeTrackingSystem
             var seeder = DependencyResolver.Current.GetService<IDatabaseSeeder>();
             seeder.Seed();
 
+        }
+
+        protected void Application_EndRequest()
+        {
+            var cookie = Request.Cookies["ETTSSession"];
+
+            if (cookie != null)
+            {
+                cookie.SameSite = SameSiteMode.Lax;
+            }
         }
     }
 }

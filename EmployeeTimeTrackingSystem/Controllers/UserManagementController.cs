@@ -1,13 +1,14 @@
-﻿using System.Web.Mvc;
-using EmployeeTimeTrackingSystem.Models;
-using System.Text;
-using EmployeeTimeTrackingSystem.Business;
-using System.Linq;
-using EmployeeTimeTrackingSystem.Helpers;
-using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
-
-namespace EmployeeTimeTrackingSystem.Controllers
+﻿namespace EmployeeTimeTrackingSystem.Controllers
 {
+    using System;
+    using System.Web.Mvc;
+    using System.Security.Cryptography;
+    using EmployeeTimeTrackingSystem.Models;
+    using System.Text;
+    using System.Linq;
+    using EmployeeTimeTrackingSystem.Helpers;
+    using EmployeeTimeTrackingSystem.Common.Contracts.Repository;
+
     public class UserManagementController : Controller
     {
         private readonly IUserService _userService;
@@ -36,7 +37,7 @@ namespace EmployeeTimeTrackingSystem.Controllers
                 return View(user);
             }
 
-            var hashedPass = Md5Generator(user.Password);
+            var hashedPass = HashPassword(user.Password);
             var userlog = _userService.Get(a => a.UserName == user.UserName && a.Password == hashedPass).FirstOrDefault();
 
             if (userlog != null)
@@ -67,17 +68,20 @@ namespace EmployeeTimeTrackingSystem.Controllers
             return View(user);
         }
 
-        public string Md5Generator(string password)
+        public static string HashPassword(string password)
         {
-            using (var md5 = System.Security.Cryptography.MD5.Create())
-            {
-                var inputBytes = Encoding.ASCII.GetBytes(password);
-                var hashBytes = md5.ComputeHash(inputBytes);
-                var sb = new StringBuilder();
-                for (int i = 0; i < hashBytes.Length; i++)
-                    sb.Append(hashBytes[i].ToString("X2"));
-                return sb.ToString();
-            }
+            byte[] salt;
+
+            new RNGCryptoServiceProvider().GetBytes(salt = new byte[16]);
+            var pbkdf2 = new Rfc2898DeriveBytes(password, salt, 10000);
+
+            byte[] hash = pbkdf2.GetBytes(20);
+            byte[] hashBytes = new byte[36];
+
+            Array.Copy(salt, 0, hashBytes, 0, 16);
+            Array.Copy(hash, 0, hashBytes, 16, 20);
+
+            return Convert.ToBase64String(hashBytes);
         }
 
         public ActionResult Logout()
